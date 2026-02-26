@@ -1,3 +1,5 @@
+import math
+
 adatok = []
 EladottJegy, JáratHossz, TizAr = 0,0,0
 
@@ -13,6 +15,7 @@ with open("eladott.txt", "r", encoding="utf-8") as be:
             JáratHossz   = int(line[1])
             TizAr        = int(line[2])
         else:
+            utas["id"]   = idx
             utas["szam"] = int(line[0])
             utas["kezd"] = int(line[1])
             utas["lesz"] = int(line[2])
@@ -41,15 +44,21 @@ print()
 #4. Feladat
 f(4)
 
-def Kerekites(x):   
-    return 5 * round(x/5)
+def jegyar(felszall, leszall, egyseg_ar):
+    tav = leszall - felszall
+    # Minden megkezdett 10 km számít
+    egysegek = math.ceil(tav / 10)
+    alapar = egysegek * egyseg_ar
+    # Kerekítés 5-re: az utolsó számjegy alapján
+    maradek = alapar % 10
+    if maradek in [1, 2]: return alapar - maradek
+    if maradek in [3, 4]: return alapar + (5 - maradek)
+    if maradek in [6, 7]: return alapar - (maradek - 5)
+    if maradek in [8, 9]: return alapar + (10 - maradek)
+    return alapar
 
-Bevetel = 0
-
-for line in adatok:
-    Bevetel += Kerekites(((line["lesz"] - line["kezd"])*TizAr))
-
-print(f"A bevétele a társaságnak: {Bevetel} Ft")
+osszes_bevetel = sum(jegyar(a["kezd"], a["lesz"], TizAr) for a in adatok)
+print(f"A társaság összes bevétele: {osszes_bevetel} Ft")
 
 
 #5. Feladat
@@ -90,19 +99,11 @@ TavInput = int(input("Adjon meg egy távolságot (km): "))
 MaxUlles = 0
 Ulesek = {}
 
-for line in adatok:
-    if line["szam"] > MaxUlles:
-        MaxUlles = line["szam"]
-
-for i in range(1, MaxUlles+1, 1):
-    Ulesek[i] = "üres"
-
 with open("kihol.txt", "w", encoding="utf-8") as ki:
-    for idx, line in enumerate(adatok, 1):
-        if TavInput > line["kezd"] and TavInput < line["lesz"] and TavInput == line["lesz"]:
-            continue
-        elif TavInput > line["kezd"] and TavInput < line["lesz"]:
-            Ulesek[idx] = line["szam"]
-
-    for ules in Ulesek:
-        ki.write(f"{ules}. ülés: {Ulesek[ules]}\n")
+    for ules in range(1,49):
+        utas_id = "üres"
+        for line in adatok:
+            if line["szam"] == ules and line["kezd"] <= TavInput < line["lesz"]:
+                utas_id = f"{line['id']}. utas"
+                break
+        ki.write(f"{ules}. ülés: {utas_id}\n")

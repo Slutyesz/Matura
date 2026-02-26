@@ -1,73 +1,48 @@
-1. ülés: üres
-2. ülés: üres
+1. ülés: 42. utas
+2. ülés: 58. utas
 3. ülés: üres
-4. ülés: üres
-5. ülés: üres
-6. ülés: 9
-7. ülés: üres
+4. ülés: 33. utas
+5. ülés: 95. utas
+6. ülés: 63. utas
+7. ülés: 46. utas
 8. ülés: üres
-9. ülés: 13
-10. ülés: üres
-11. ülés: üres
-12. ülés: 30
-13. ülés: üres
-14. ülés: üres
-15. ülés: 31
-16. ülés: üres
-17. ülés: üres
-18. ülés: üres
-19. ülés: 45
-20. ülés: üres
-21. ülés: üres
-22. ülés: 15
+9. ülés: 6. utas
+10. ülés: 41. utas
+11. ülés: 74. utas
+12. ülés: 102. utas
+13. ülés: 9. utas
+14. ülés: 71. utas
+15. ülés: 22. utas
+16. ülés: 67. utas
+17. ülés: 104. utas
+18. ülés: 61. utas
+19. ülés: 40. utas
+20. ülés: 26. utas
+21. ülés: 109. utas
+22. ülés: 48. utas
 23. ülés: üres
-24. ülés: 26
-25. ülés: üres
-26. ülés: 20
-27. ülés: üres
-28. ülés: üres
-29. ülés: üres
-30. ülés: üres
-31. ülés: üres
-32. ülés: 43
-33. ülés: 4
-34. ülés: üres
-35. ülés: üres
-36. ülés: üres
-37. ülés: 27
-38. ülés: üres
-39. ülés: üres
-40. ülés: 19
-41. ülés: 10
-42. ülés: 1
-43. ülés: 38
+24. ülés: 97. utas
+25. ülés: 92. utas
+26. ülés: 24. utas
+27. ülés: 37. utas
+28. ülés: 64. utas
+29. ülés: 103. utas
+30. ülés: 12. utas
+31. ülés: 15. utas
+32. ülés: 73. utas
+33. ülés: 91. utas
+34. ülés: 68. utas
+35. ülés: 70. utas
+36. ülés: 57. utas
+37. ülés: 54. utas
+38. ülés: 43. utas
+39. ülés: 53. utas
+40. ülés: üres
+41. ülés: üres
+42. ülés: 85. utas
+43. ülés: 32. utas
 44. ülés: üres
-45. ülés: üres
-46. ülés: 7
-47. ülés: üres
-48. ülés: 22
-53. ülés: 39
-54. ülés: 37
-57. ülés: 36
-58. ülés: 2
-61. ülés: 18
-63. ülés: 6
-64. ülés: 28
-67. ülés: 16
-68. ülés: 34
-70. ülés: 35
-71. ülés: 14
-73. ülés: 32
-74. ülés: 11
-82. ülés: 47
-85. ülés: 42
-91. ülés: 33
-92. ülés: 25
-95. ülés: 5
-97. ülés: 24
-101. ülés: 48
-102. ülés: 12
-103. ülés: 29
-104. ülés: 17
-109. ülés: 21
-111. ülés: 46
+45. ülés: 19. utas
+46. ülés: 111. utas
+47. ülés: 82. utas
+48. ülés: 101. utas
